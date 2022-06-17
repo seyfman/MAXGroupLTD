@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.footer {
+  margin-top: 150px;
+  @include adaptiv-value-to-end("margin-top", 150, 30, $containerAdaptiv, 320);
+  @include adaptiv-value-to-end("padding-top", 50, 30, $containerAdaptiv, 320);
+  @include adaptiv-value-to-end("padding-bottom", 50, 30, $containerAdaptiv, 320);
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid $acsent;
+}
+.footer-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @include adaptiv-value-to-end("column-gap", 50, 20, $containerAdaptiv, 320);
+  @include adaptiv-value-to-end("row-gap", 30, 15, $containerAdaptiv, 320);
+  @include adaptiv-value-to-end("width", 330, 160, $containerAdaptiv, 320);
+
+  &__item {
+  }
+
+  &__link {
+    @include adaptiv-value-to-end("font-size", 24, 12, $containerAdaptiv, 320);
+
+    line-height: 1.67;
+    color: #999999;
+    transition: 0.3s all;
+
+    &:hover {
+      @media (min-width: $md2) {
+        color: $white;
+      }
+    }
+  }
+}
+.footer-logos {
+  &__telegramm {
+    display: block;
+    text-align: end;
+    margin-bottom: 30px;
+    margin-left: 11px;
+    @include adaptiv-value-to-end(" margin-left", 11, 3, $containerAdaptiv, 320);
+
+    padding-left: 30px;
+    @include adaptiv-value-to-end("padding-left", 30, 17, $containerAdaptiv, 320);
+    @include adaptiv-value-to-end("font-size", 24, 10, $containerAdaptiv, 320);
+    line-height: 1.67;
+    background-image: url("../images/header/socials-telegramm.svg");
+    @include adaptiv-value-to-end(" background-size", 24, 12, $containerAdaptiv, 320);
+    background-repeat: no-repeat;
+    background-position: left, center;
+  }
+
+  &__logo {
+    display: block;
+    margin-right: -11px;
+    @include adaptiv-value-to-end("width", 220, 90, $containerAdaptiv, 320);
+    // height: 105px;
+    & > img {
+      width: 100%;
+    }
+  }
+}

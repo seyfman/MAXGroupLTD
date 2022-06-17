@@ -1,0 +1,102 @@
+// Корьера
+.career-top {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__discription {
+  }
+
+  &__title {
+    @include adaptiv-value-to-end("margin-bottom", 40, 20, $containerAdaptiv, 320);
+  }
+
+  &__text {
+    & p:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    @include adaptiv-value-to-end("width", 590, 302, $containerAdaptiv, 320);
+    @media (max-width: $md3) {
+      display: none;
+    }
+  }
+
+  &__img-mobile {
+    display: none;
+    @include adaptiv-value-to-end("width", 590, 302, $containerAdaptiv, 320);
+    @media (max-width: $md3) {
+      display: block;
+      margin: 4px auto 16px;
+    }
+  }
+}
+
+// Предлагаем
+.offer {
+  &__title {
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $md3) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+  }
+
+  &__text {
+  }
+}
+
+// Кого мы ищем
+.search {
+  &__title {
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    @media (max-width: $md3) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    @media (min-width: $md3) {
+      padding: 15px;
+    }
+    @media (min-width: $md2) {
+      &:hover {
+        outline: 1px solid #00c8e6;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &__item-img {
+    @include adaptiv-value-to-end("width", 150, 50, $containerAdaptiv, 320);
+    @include adaptiv-value-to-end("margin-bottom", 30, 15, $containerAdaptiv, 320);
+  }
+
+  &__item-title {
+    @include adaptiv-value-to-end("margin-bottom", 20, 15, $containerAdaptiv, 320);
+    @include adaptiv-value-to-end("font-size", 32, 16, $containerAdaptiv, 320);
+    text-transform: uppercase;
+  }
+
+  &__item-text {
+  }
+}

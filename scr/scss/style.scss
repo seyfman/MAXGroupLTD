@@ -1,0 +1,50 @@
+// ========== Подключаем Normalize ==========
+// @import "normalize";
+
+// ========== Swiper ==========
+// @import "swiper-bundle.min";
+// @import "swiper-vars";
+// @import "swiper";
+
+// ========= Обнуление стилей ================
+@import "null";
+
+// ========= Подключение шрифтов =================
+@import "fonts";
+
+// ========= подключение переменных ===============
+@import "vars";
+
+// ========= Подключение mixin =============
+@import "mixins";
+
+// ======== General =======
+@import "general";
+
+// ======== Header =======
+@import "header";
+
+//========== Footer ========
+@import "footer";
+
+// ========= СТРАНИЦЫ ===============
+// ======= index.html ===============
+@import "index";
+
+//========== products.html ===============
+@import "products";
+
+//========== office.html ===============
+@import "office";
+
+// ============ development.html ========
+@import "development";
+
+//============ measure.html ===========
+@import "measure";
+
+// ============ career.html ==========
+@import "career";
+
+//============ about.html =======
+@import "about";

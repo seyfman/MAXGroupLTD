@@ -1,0 +1,87 @@
+.office {
+  @include adaptiv-value-to-end("margin-top", 90, 30, $containerAdaptiv, 320);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  @media (max-width: $md3) {
+    flex-direction: column;
+  }
+
+  &__discription {
+  }
+
+  &__discription-title {
+    margin-bottom: 20px;
+  }
+
+  &__discription-text {
+  }
+
+  &__img {
+    @include adaptiv-value-to("width", 700, 500, $containerAdaptiv, $md3-noPX);
+    border-radius: 11px;
+    @media (max-width: $md3) {
+      width: 100%;
+    }
+  }
+}
+
+// Где находимся
+.where-location {
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__items {
+    margin-right: -233px;
+    @include adaptiv-value-to-end("margin-left", 15, 32, $containerAdaptiv, 320);
+    display: flex;
+    @include adaptiv-value-to-end(" column-gap", 70, 40, $containerAdaptiv, 320);
+  }
+
+  &__item-img {
+    width: 1020px;
+    @include adaptiv-value-to-end("width", 720, 200, $containerAdaptiv, 320);
+    @include adaptiv-value-to-end("height", 550, 180, $containerAdaptiv, 320);
+    transform: skew(26.3deg);
+    @include adaptiv-value-to-end(" border-radius", 34, 20, $containerAdaptiv, 320);
+    overflow: hidden;
+    & img {
+      @include adaptiv-value-to-end("margin-left", -125, -50, $containerAdaptiv, 320);
+      height: 100%;
+      transform: skew(-26.3deg);
+    }
+  }
+}
+
+// Что за офис
+.what-office {
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__items {
+    margin-right: -233px;
+    @include adaptiv-value-to-end("margin-left", 15, 32, $containerAdaptiv, 320);
+    display: flex;
+    @include adaptiv-value-to-end(" column-gap", 70, 40, $containerAdaptiv, 320);
+  }
+
+  &__item-img {
+    width: 1020px;
+    @include adaptiv-value-to-end("width", 720, 200, $containerAdaptiv, 320);
+    @include adaptiv-value-to-end("height", 550, 180, $containerAdaptiv, 320);
+    transform: skew(-26.7deg);
+    @include adaptiv-value-to-end(" border-radius", 34, 20, $containerAdaptiv, 320);
+    overflow: hidden;
+    & img {
+      @include adaptiv-value-to-end("margin-left", -130, -50, $containerAdaptiv, 320);
+      height: 100%;
+      transform: skew(26.7deg);
+    }
+  }
+}

@@ -1,0 +1,145 @@
+// О компании
+.about-top {
+  display: flex;
+  align-items: center;
+  @include adaptiv-value-to-end("margin-top", 125, 30, $containerAdaptiv, 320);
+  @media (max-width: $md2) {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__discription {
+  }
+
+  &__discription-title {
+    margin-bottom: 20px;
+  }
+
+  &__discription-text {
+  }
+
+  &__discription-img {
+    @include adaptiv-value-to-end("width", 590, 316, $containerAdaptiv, 320);
+  }
+}
+
+// Средний блок
+.about-main {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    display: flex;
+    @include adaptiv-value-to-end("gap", 20, 10, $containerAdaptiv, 320);
+  }
+
+  &__title-img {
+    @include adaptiv-value-to-end("width", 60, 30, $containerAdaptiv, 320);
+  }
+
+  &__title-text {
+    @include adaptiv-value-to-end("padding-bottom", 10, 5, $containerAdaptiv, 320);
+
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $acsent;
+      border-radius: 1px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+    @media (max-width: $md3) {
+      flex-direction: column;
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__item {
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-element {
+    @include adaptiv-value-to-end("padding-left", 40, 21, $containerAdaptiv, 320);
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      @include adaptiv-value-to-end("width", 20, 10, $containerAdaptiv, 320);
+      height: 2px;
+      left: 0;
+      top: 30%;
+      background-color: $acsent;
+    }
+
+    & br {
+      @media (max-width: $md3) {
+        display: none;
+      }
+    }
+    & + .about-main__list-element {
+      @include adaptiv-value-to-end("margin-top", 30, 20, $containerAdaptiv, 320);
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    @include adaptiv-value-to-end("width", 600, 290, $containerAdaptiv, 320);
+    @media (max-width: $md3) {
+      order: 2;
+      margin-top: 14px;
+    }
+  }
+}
+
+// Мы готовы предложить
+.about-bottom {
+  &__title {
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include adaptiv-value-to-end("grid-column-gap", 167, 80, $containerAdaptiv, $md2-noPX);
+    @include adaptiv-value-to-end("grid-row-gap", 50, 20, $containerAdaptiv, 320);
+    list-style: none;
+    @media (max-width: $md2) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    @include adaptiv-value-to-end(" padding-left", 80, 40, $containerAdaptiv, 320);
+    @include adaptiv-value-to-end("min-height", 60, 30, $containerAdaptiv, 320);
+    display: flex;
+    align-items: center;
+    background-image: url("../images/about/about-bottom-icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    @include adaptiv-value-to-end("background-size", 60, 30, $containerAdaptiv, 320);
+    @media (max-width: $md2) {
+      & > br {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    text-align: center;
+    @include adaptiv-value-to-end("font-size", 32, 16, $containerAdaptiv, 320);
+    color: $acsent;
+  }
+}

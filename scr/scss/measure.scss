@@ -1,0 +1,112 @@
+// Мероприятия
+.measure-top {
+  @include adaptiv-value-to-end("margin-top", 36, 30, $containerAdaptiv, 320);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 35px;
+  row-gap: 5px;
+  @media (max-width: $md3) {
+    flex-direction: column;
+  }
+
+  &__discription {
+  }
+
+  &__discription-title {
+    margin-bottom: 20px;
+  }
+
+  &__discription-text {
+  }
+
+  &__img {
+    @include adaptiv-value-to("width", 600, 320, $containerAdaptiv, $md3-noPX);
+    @include adaptiv-value-to-end("width", 500, 320, $md3-noPX, 320);
+  }
+}
+
+// SYMFONYCONF, MAC ...
+.measure-section {
+  &__title {
+    padding-bottom: 10px;
+    @include adaptiv-value-to-end("margin-bottom", 30, 10, $containerAdaptiv, 320);
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      border-radius: 1px;
+      background-color: $acsent;
+    }
+    & br {
+      @media (max-width: $md2) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: $md2) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    @include adaptiv-value-to-end("column-gap", 20, 10, $containerAdaptiv, 320);
+  }
+
+  &__item-img {
+  }
+
+  &__item-text {
+    & br {
+      @media (max-width: $md2) {
+        display: none;
+      }
+    }
+  }
+
+  // KINZA
+
+  &__arrow {
+    margin-bottom: 30px;
+    text-align: center;
+    @media (max-width: $md2) {
+      text-align: left;
+    }
+  }
+
+  &__arrow-title {
+    margin-bottom: 30px;
+    @include adaptiv-value-to-end("font-size", 32, 14, $containerAdaptiv, 320);
+  }
+
+  &__arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 178px;
+    @media (max-width: $md2) {
+      display: none;
+    }
+  }
+
+  &__arrow-left {
+  }
+
+  &__arrow-right {
+  }
+}

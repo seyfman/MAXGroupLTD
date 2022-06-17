@@ -1,0 +1,126 @@
+html {
+  max-width: $maxWidth;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+main {
+  // overflow-x: hidden;
+}
+
+body {
+  // max-width: $container;
+  // width: 100%;
+  margin: 0 auto;
+  // font-family: Raleway, sans-serif;
+  font-family: ABeeZee, sans-serif;
+  font-weight: 400;
+  background-color: $bg-color;
+  overflow-x: hidden;
+  color: $text-white;
+  position: relative;
+  @media (min-width: $md2) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2786.37px;
+      height: 2240.63px;
+      left: -1500px;
+      top: -2100px;
+      // background-color: red;
+      background: linear-gradient(119.9deg, #00c8e6 28.53%, rgba(0, 200, 230, 0) 72.07%);
+      opacity: 0.3;
+      filter: blur(200px);
+      border-radius: 64px;
+      transform: rotate(-143.46deg);
+    }
+  }
+  @media (max-width: $md2) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 584.16px;
+      height: 469.74px;
+      right: -270px;
+      top: -300px;
+      // background-color: red;
+
+      background: linear-gradient(119.9deg, #00c8e6 28.53%, rgba(0, 200, 230, 0) 72.07%);
+      opacity: 0.3;
+      filter: blur(200px);
+      border-radius: 64px;
+      transform: rotate(-75.08deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 56.88%;
+      right: -115.99%;
+      top: 40%;
+      height: 500px;
+      background: linear-gradient(119.9deg, #00c8e6 28.53%, rgba(0, 200, 230, 0) 72.07%);
+      opacity: 0.5;
+      filter: blur(200px);
+      border-radius: 64px;
+      transform: matrix(0.63, -0.84, 0.7, 0.65, 0, 0);
+    }
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  min-width: $minWidth;
+  max-width: $container + $container-padding + $container-padding;
+  width: 100%;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin: 0 auto;
+}
+
+.title__64-30 {
+  font-family: "Russo One";
+  font-style: normal;
+  font-weight: 400;
+  @include adaptiv-value-to-end("font-size", 64, 30, $containerAdaptiv, 320);
+  line-height: 1.2;
+}
+
+.text__24-16 {
+  @include adaptiv-value-to-end("font-size", 24, 16, $containerAdaptiv, 320);
+  line-height: 1.17;
+}
+
+.text__24-14 {
+  @include adaptiv-value-to-end("font-size", 24, 14, $containerAdaptiv, 320);
+  line-height: 1.17;
+}
+
+.text__24-12 {
+  @include adaptiv-value-to-end("font-size", 24, 12, $containerAdaptiv, 320);
+  line-height: 1.17;
+}
+
+.mt__150-50 {
+  @include adaptiv-value-to-end("margin-top", 150, 50, $containerAdaptiv, 320);
+}
+
+.mt__150-30 {
+  @include adaptiv-value-to-end("margin-top", 150, 30, $containerAdaptiv, 320);
+}
+
+.mb__50-20 {
+  @include adaptiv-value-to-end("margin-bottom", 50, 20, $containerAdaptiv, 320);
+}
+
+.mb__30-20 {
+  @include adaptiv-value-to-end("margin-bottom", 30, 20, $containerAdaptiv, 320);
+}

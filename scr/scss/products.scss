@@ -1,0 +1,49 @@
+// Продукты
+.products {
+  margin-top: 0;
+  @media (max-width: $md3) {
+    margin-top: 30px;
+  }
+
+  &__top {
+    @include adaptiv-value-to-end("margin-bottom", 100, 20, $containerAdaptiv, 320);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__top-title {
+  }
+
+  &__top-img {
+    @include adaptiv-value-to-end("width", 800, 400, $containerAdaptiv, $md3-noPX);
+    @media (max-width: $md3) {
+      display: none;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include adaptiv-value-to-end("grid-column-gap", 108, 31, $containerAdaptiv, 320);
+    @include adaptiv-value-to-end("grid-row-gap", 100, 30, $containerAdaptiv, 320);
+    @media (max-width: $md3) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__item {
+  }
+
+  &__item-img {
+    @include adaptiv-value-to-end("margin-bottom", 30, 20, $containerAdaptiv, 320);
+
+    & img {
+      @include adaptiv-value-to-end("width", 200, 60, $containerAdaptiv, 320);
+    }
+  }
+
+  &__item-text {
+  }
+}
