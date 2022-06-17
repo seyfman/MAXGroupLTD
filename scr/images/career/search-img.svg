@@ -1,0 +1,17 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M97.5 37.5H140C141.38 37.5 142.5 38.62 142.5 40V130C142.5 131.38 141.38 132.5 140 132.5H10C8.62 132.5 7.5 131.38 7.5 130V40C7.5 38.62 8.62 37.5 10 37.5H52.5" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M72.5 70V122.5H17.5V60" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M25 62.5H75" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M27.5 122.5V115C27.5 110.858 30.8575 107.5 35 107.5H55C59.1425 107.5 62.5 110.858 62.5 115V122.5" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M45 97.5C50.5228 97.5 55 91.9036 55 85C55 78.0964 50.5228 72.5 45 72.5C39.4772 72.5 35 78.0964 35 85C35 91.9036 39.4772 97.5 45 97.5Z" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M135 67.5H130" stroke="#00C8E6" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M125 67.5H85" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M85 80H125" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M90 120H85V125H90V120Z" fill="#00C8E6"/>
+<path d="M100 120H95V125H100V120Z" fill="#00C8E6"/>
+<path d="M110 120H105V125H110V120Z" fill="#00C8E6"/>
+<path d="M120 120H115V125H120V120Z" fill="#00C8E6"/>
+<path d="M130 120H125V125H130V120Z" fill="#00C8E6"/>
+<path d="M80 50H70C64.4775 50 60 45.5225 60 40V17.5C60 16.12 61.12 15 62.5 15H87.5C88.88 15 90 16.12 90 17.5V40C90 45.5225 85.5225 50 80 50Z" stroke="white" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M67.5 25H82.5" stroke="#00C8E6" stroke-width="4" stroke-miterlimit="10"/>
+</svg>
